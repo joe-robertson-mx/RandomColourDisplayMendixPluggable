@@ -7,12 +7,8 @@ export interface RandomColourDisplayProps {
 
 export const RandomColourDisplay = (props: RandomColourDisplayProps): ReactElement => {
     const {value, colour} = props
-
     const sectionStyle = {
         color: colour,
     }
-
-    return (
-        <div className='CountBarSection' style={sectionStyle}>{value}</div>
-    )
+    return (<div className='CountBarSection' style={sectionStyle}>{value}</div>)
 }
